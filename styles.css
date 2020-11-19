@@ -1,3 +1,4 @@
+
 body {
     background-image: url("pictures/bgrnd.png");
     
@@ -9,7 +10,7 @@ body {
 nav > a{
     text-decoration: none;
     font-family: 'Bebas Neue', cursive;
-    color: green;
+    color: #6D8EA0;
     font-size: 2em;
 }
 
@@ -21,11 +22,17 @@ h1{
     margin: auto;
     width:80%;
     text-align: center;
-    padding: 10% 2% 5% 2%;
-    background-color: antiquewhite;
+    padding: 5% 2% 5% 2%;
+    background-color: #6D8EA0;
     border-radius: 1%;
-    color: black;
+    color: white;
     font-family: 'Lato', sans-serif;
+}
+
+h2{
+    width: 100px;
+    height: 100px;
+    color: transparent;
 }
 
 .content{
