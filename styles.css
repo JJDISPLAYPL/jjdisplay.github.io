@@ -3,6 +3,7 @@ body {
     background-image: url("pictures/bgrnd.png");
     
 }
+
 .navbar{
     background-color: black;
     position: fixed;
@@ -22,11 +23,17 @@ h1{
     margin: auto;
     width:80%;
     text-align: center;
-    padding: 5% 2% 5% 2%;
-    background-color: #6D8EA0;
+    padding: 10% 4% 11% 4%;
     border-radius: 1%;
     color: white;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Tangerine', cursive;
+}
+
+#main{
+    background-image: url("pictures/Main.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 4em;
 }
 
 h2{
@@ -103,4 +110,10 @@ div.dropdown-item > a{
 }
 .bottom-head{
     font-family: 'Courier New', Courier, monospace;
+}
+
+
+.nav-link > svg{
+    position: relative;
+    top: -3px;
 }
