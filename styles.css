@@ -48,6 +48,7 @@ h2{
 }
 
 .content > div{
+    display: block;
     border-radius: 1em;
     width: 85%;
     margin: auto;
@@ -116,4 +117,18 @@ div.dropdown-item > a{
 .nav-link > svg{
     position: relative;
     top: -3px;
+}
+
+.contents > .title{
+    background-color: white;
+    color: black;
+    width: 30%;
+    position: relative;
+    left: -15%;
+    text-align: center;
+    padding: 0.4% 8% 0.4% 13%;
+    margin: 1.5% 0 1.5% 0;
+    border-radius: 0 0 20% 0;
+    font-size: 3em;
+    font-family: 'Tangerine', cursive;
 }
