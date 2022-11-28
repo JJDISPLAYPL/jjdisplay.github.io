@@ -2,7 +2,7 @@ tsParticles.load("tsParticle", {"autoPlay":true,"background":{"color":"","image"
 
 
 var typed3 = new Typed('#label', {
-    strings: ['Welcome to', 'JJ Display'],
+    strings: ['Welcome to', 'J&amp;J Display'],
     typeSpeed: 100,
     startDelay: 100,
     backSpeed: 100,
