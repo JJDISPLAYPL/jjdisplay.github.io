@@ -298,13 +298,16 @@ a :not(:hover){
 }
 
 .contentHeader {
-    background-color: #263f3f;
+    background-color: #263f3fb9;
     color: white;
     text-align: center;
     width: 100%;
     font-size: 2.4em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 10px 15px; /* updown leftright */
+    position: sticky;
+    top: 70px;
+    z-index: 20;
 }
 
 #content{
@@ -397,10 +400,13 @@ a :not(:hover){
 .cardHeader {
     font-size: 1.5em;
     margin-bottom: 5px;
+    margin-top: 1px;
 }
 
 .cardContents {
     font-size: 1em;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .buttonContainer {
