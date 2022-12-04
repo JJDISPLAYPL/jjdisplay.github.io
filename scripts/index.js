@@ -10,4 +10,3 @@ var typed3 = new Typed('#label', {
     loop: false,
     showCursor: false
 });
-

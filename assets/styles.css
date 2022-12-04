@@ -135,7 +135,6 @@ a {
 
 #BakaMitai #label{
     position: absolute;
-    top: 20%;
     width: 100%;
     text-align: center;
     color: rgba(255, 255, 255, 0.96);
@@ -145,27 +144,71 @@ a {
     /* overflow-y: visible; */
 }
 
-@media screen and (max-width: 470px) {
+#BakaMitai #AboutUs{
+    position: absolute;
+    bottom: 30%;
+    width: 100%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.96);
+    font-family: 'Noto Sans JP', sans-serif;
+    z-index: 1;
+    overflow: visible;
+    font-size: 1em;
+    font-weight: lighter;
+    padding-left: 10%;
+    padding-right: 10%;
+    /* overflow-y: visible; */
+}
+
+@media screen and (min-width: 1200px) {
+    #BakaMitai #label {
+        font-size: 7em;
+        top: 20%;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
     #BakaMitai #label {
         font-size: 5em;
+        top: 20%;
+    }
+}
+
+
+@media screen and (max-width: 1100px) {
+    #BakaMitai #label {
+        font-size: 3em;
+        top: 15%;
     }
 }
 
 @media screen and (max-width: 1000px) {
     #BakaMitai #label {
-        font-size: 7em;
-    }
-}
-
-@media screen and (min-width: 1000px) {
-    #BakaMitai #label {
-        font-size: 9em;
-    }
-}
-
-@media screen and (max-width: 370px) {
-    #BakaMitai #label {
         font-size: 2em;
+        top: 10%;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    #BakaMitai #AboutUs {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #BakaMitai #AboutUs {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 666px) {
+    #BakaMitai #AboutUs {
+        display: none;
+    }
+    #BakaMitai #label {
+        top: 40%;
     }
 }
 
@@ -310,14 +353,14 @@ a :not(:hover){
     z-index: 20;
 }
 
+.contentHeader + div {
+    padding-top: 50px;
+}
+
 #content{
     text-align: justify;
     font-family: 'Noto Sans JP', sans-serif;
-    /* background-image: linear-gradient(167deg, var(--content-bg-color), var(--lighter-content-bg-color)) ; */
-    /* background-repeat: no-repeat; */
     background-color: var(--lighter-content-bg-color);
-    /* background-attachment: fixed;
-    background-position: center; */
     height: 100%;
 }
 
