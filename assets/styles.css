@@ -15,7 +15,13 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
     max-width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    overflow: auto;
+    height: 100%;
 }
 
 @keyframes fadeIn {
@@ -47,8 +53,6 @@ html {
 #bottom{
     justify-content: center;
     text-align: center;
-    height: 3%;
-    margin-top: 5%;
     padding: 1% 2%;
     background-color: grey;
     color: black;
@@ -82,9 +86,10 @@ html {
     color: black;
     text-align: left;
 }
-.bottom-head{
-    font-family: 'Courier New', Courier, monospace;
-}
+/* .bottom-head{ */
+    /* font-family: 'Courier New', Courier, monospace; */
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+/* } */
 
 a {
     text-decoration: none;
@@ -405,21 +410,33 @@ a :not(:hover){
     background-color: var(--card-bg-color);
 }
 
-.leftSubCard {
-    order: 1;
-    margin-left: 0;
-    position: relative;
-    left: -10px;
-}
-
-.rightSubCard {
+.itemCard:nth-child(even) > .subCard{
     order: 3;
     margin-right: 0;
     position: relative;
     right: -10px;
 }
 
-.leftSubCard:before {
+.itemCard:nth-child(even) > .subCard::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 0 0 16px 16px;
+    border-style: solid;
+    border-color: var(--card-fold-color) var(--lighter-content-bg-color);
+}
+
+
+.itemCard:nth-child(odd) > .subCard {
+    order: 1;
+    margin-left: 0;
+    position: relative;
+    left: -10px;
+}
+
+
+.itemCard:nth-child(odd) > .subCard::before{
     content: "";
     position: absolute;
     top: 0;
@@ -429,16 +446,6 @@ a :not(:hover){
     border-color: var(--card-fold-color) var(--lighter-content-bg-color);
 }
 
-
-.rightSubCard:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-width: 0 0 16px 16px;
-    border-style: solid;
-    border-color: var(--card-fold-color) var(--lighter-content-bg-color);
-}
 
 .cardHeader {
     font-size: 1.5em;
