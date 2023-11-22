@@ -220,7 +220,7 @@ a {
 
 #header{
     position: fixed;
-
+    background-color: black;
     box-shadow: 0 0.075rem 1rem 0 rgba(0, 0, 0, 0.125);
     height: 4rem;
     left: 0;
