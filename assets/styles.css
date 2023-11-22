@@ -22,8 +22,15 @@ html {
 }
 
 body {
-    overflow: auto;
+    overflow: hidden;
+    overflow-y: scroll;
+    width: 100%;
     height: 100%;
+    box-sizing: content-box; /* So the width will be 100% + 17px */
+}
+
+body::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
 }
 
 @keyframes fadeIn {
@@ -38,6 +45,10 @@ body {
     30% {background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 62%, rgba(2,0,36,1) 100%)}
     30% {background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 76%, rgba(2,0,36,1) 100%)}
     100% {background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 72%, rgba(186,186,186,1) 100%)}
+}
+
+#Logo {
+    height: 50px;
 }
 
 #wrapper{
