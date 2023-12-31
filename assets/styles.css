@@ -1,6 +1,6 @@
 :root {
     --nav-bg-color: black;
-    --nav-hover-bg-color: white;
+    --nav-hover-bg-color: black;
     --nav-font-color: white;
     --nav-hover-font-color: black;
     --content-bg-color: darkslategray;
@@ -53,6 +53,7 @@ body::-webkit-scrollbar {
 
 #wrapper{
     margin-bottom: 0;
+    background-color: black;
 }
 
 
@@ -236,7 +237,6 @@ a {
     height: 4rem;
     left: 0;
     line-height: 3.5rem;
-
     position: fixed;
     top: 0;
     width: 100%;
@@ -377,7 +377,10 @@ a :not(:hover){
 #content{
     text-align: justify;
     font-family: 'Noto Sans JP', sans-serif;
-    background-color: var(--lighter-content-bg-color);
+    /* background-color: var(--lighter-content-bg-color); */
+    background-image: url("../pictures/b.jpg") ;
+    background-repeat: no-repeat;
+    background-size: contain;
     height: 100%;
 }
 
